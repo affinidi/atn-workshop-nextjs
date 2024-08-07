@@ -4,11 +4,14 @@ This repository contains multiple readme files to get you started on integrating
 
 ## Readme
 
-- [Affinidi Login](/affinidi-login.md)
+- Module 1 : [Affinidi Login](/affinidi-login.md)
 
-- [Affinidi Credential Issuance Service](/credentials-issuance.MD)
+- Module 2 : [Affinidi Credential Issuance Service](/credentials-issuance.MD)
 
-- [Affinidi Iota framework](/iota-framework.MD)
+- Module 3 : [Affinidi Iota framework](/iota-framework.MD)
+
+> [!NOTE]
+> Each module is directly related to the previous one, so make sure to try them one after another
 
 ## Read More
 
