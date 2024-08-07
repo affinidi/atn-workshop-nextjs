@@ -1,4 +1,4 @@
-# Step by Step guide to integrate Affinidi Vault, Affinidi Login, Affinidi Credential Issuance Service and Affinidi Iota framework
+# Step by Step guide
 
 This repository contains multiple readme files to get you started on integrating Affinidi Login, Affinidi credentials issuance service and Affinidi Iota framework in nextjs application created from [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
