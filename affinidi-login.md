@@ -19,7 +19,7 @@ We will use a simple [Next.js](https://nextjs.org/) app and enable Affinidi Logi
 | `create .env files`             | add [.env](#add-env-file) files                                                                                           |
 | `update .env files`             | update [.env](#update-environment-variables) files                                                                        |
 | `Create bankend Env reader`     | create backend env reader file [env.ts](#create-env-reader) files                                                         |
-| `auth lib for nextjs`           | Install [next-auth](#install-auth-library-for-nextjs) library for nextjs                                                  |
+| `auth lib for nextjs`           | install [next-auth](#install-auth-library-for-nextjs) library for nextjs                                                  |
 | `types for next auth`           | create [next-auth.d.ts](#add-types-for-next-auth) types for next-auth                                                     |
 | `types for next auth response`  | create [types.ts](#add-a-type-for-auth-response) types for next-auth                                                      |
 | `Affinidi as Auth Option`       | create Auth Option for Login [auth-options.ts](#add-affinidi-as-auth-option)                                              |
