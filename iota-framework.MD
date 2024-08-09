@@ -70,7 +70,7 @@ npm install @affinidi-tdk/iota-browser @affinidi-tdk/iota-core
 ```
 
 > [!IMPORTANT]
-> It also require Affinidi TDK Auth Provider, however we already have installed that package as part of Affinidi Credential Issuance service.
+> It also requires the Affinidi TDK Auth Provider, which we've already installed with the Affinidi Credential Issuance service in Module 2.
 > &nbsp;
 
 ### Create required directories and files
