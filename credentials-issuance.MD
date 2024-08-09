@@ -83,22 +83,66 @@ You can refer the [Affinidi Documentation](https://docs.affinidi.com/dev-tools/a
 2. Once logged in successfully, create token by running below command
 
    ```sh
-   affinidi token create-token -n MyAppVerificationKey -w -p my-secret-passphrase
+   affinidi token create-token
    ```
 
-   `MyAppVerificationKey` : Replace with your own Name of the Personal Access Token, at least 8 chars long
+   Follow the instruction
 
-   `my-secret-passphrase` : Replace with your own Passphrase for generation of private public key pair
+   ```
+    ? Enter the value for name workshopPAT
+    ? Generate a new keypair for the token? yes
+    ? Enter a passphrase to encrypt the private key. Leave it empty for no encryption ******
+    ? Add token to active project and grant permissions? yes
+    ? Enter the allowed resources, separated by spaces. Use * to allow access to all project resources *
+    ? Enter the allowed actions, separated by spaces. Use * to allow all actions *
+   ```
 
    **Sample response**
 
    ```json
-   {
-     "tokenId": "XXXXXXXXXXXXXXXX",
-     "passphrase": "XXXXXXXXXXXXXXXX",
-     "privateKey": "XXXXXXXXXXXXXXXX",
-     "projectId": "XXXXXXXXXXXXXXXX"
-   }
+    Creating Personal Access Token... Created successfully!
+    Adding token to active project... Added successfully!
+    Granting permissions to token... Granted successfully!
+    {
+      "id": "**********",
+      "ari": "ari:iam:::token/**********",
+      "ownerAri": "ari:iam:::user/**********",
+      "name": "workshopPAT",
+      "scopes": [
+        "openid",
+        "offline_access"
+      ],
+      "authenticationMethod": {
+        "type": "PRIVATE_KEY",
+        "signingAlgorithm": "RS256",
+        "publicKeyInfo": {
+          "jwks": {
+            "keys": [
+              {
+                "use": "sig",
+                "kty": "RSA",
+                "kid": "**********",
+                "alg": "RS256",
+                "n": "**********",
+                "e": "AQAB"
+              }
+            ]
+          }
+        }
+      }
+    }
+
+    Use the projectId, tokenId, privateKey and passphrase (if provided) to use this token with Affinidi TDK
+    {
+      "tokenId": "*******",
+      "projectId": "*******",
+      "privateKey": "*******",
+      "passphrase": "******"
+    }
+    ›   Warning:
+    ›   Please save the privateKey and passphrase (if provided) somewhere safe. You will not be able to view them again.
+    ›
+
    ```
 
    For more details on the command run below command
