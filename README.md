@@ -1,14 +1,18 @@
-# Step by Step guide
+# Hello World with Affinidi Trust Network: Your Quick Start Guide
 
-This repository contains multiple readme files to get you started on integrating Affinidi Login, Affinidi credentials issuance service and Affinidi Iota framework in nextjs application created from [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+In this workshop, you'll build a nextjs application created from [Next.js](https://nextjs.org/) bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) using the Affinidi Trust Network (ATN) that feature passwordless authentication flows, verifiable credential issuance, and consent-driven data access powered by the Iota framework. You'll also implement open standards-based workflows for collecting, storing, and sharing data securely, creating privacy-centric digital identity solutions. 
 
 ## Readme
 
-- Module 1 : [Affinidi Login](/affinidi-login.md)
+The workshop is structured into three key modules
 
-- Module 2 : [Affinidi Credential Issuance Service](/credentials-issuance.MD)
+- Module 1 : Implementing Passwordless Authentication: Learn to create secure and user-friendly authentication flows without relying on traditional passwords using [Affinidi Login](/affinidi-login.md)
 
-- Module 3 : [Affinidi Iota framework](/iota-framework.MD)
+- Module 2 : Verifiable Credential Issuance: Dive into the Credentials Issuance feature to issue tamper-evident digital credentials, enabling trust in digital interactions through flow of portable trusted data using [Affinidi Credential Issuance Service](/credentials-issuance.MD)
+
+- Module 3 : Building Consent-Driven Data Access: Implement workflows that ensure users have full control over their data, with emphasis on secure and transparent data sharing practices using [Affinidi Iota framework](/iota-framework.MD)
+
+By the end of the workshop, you'll have a comprehensive understanding of how to leverage Affinidi Trust Network (ATN) to build robust, user-centric interoperable applications.
 
 > [!NOTE]
 > Each module is directly related to the previous one, so make sure to try them one after another
