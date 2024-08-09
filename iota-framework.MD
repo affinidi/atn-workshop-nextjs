@@ -6,7 +6,7 @@ More Details on Affinidi Iota Framework is available on [Affinidi Documentation]
 
 ## Introduction
 
-We will use a simple [Next.js](https://nextjs.org/) app and enable Affinidi Iota framework in `iota` page with `nextjs` Framework. Implement workflows that ensure users have full control over their data, with emphasis on secure and transparent data sharing practices using OID4VP & PEX.
+We will use a same [Next.js](https://nextjs.org/) app which we worked in module 1 & module 2 and enable Affinidi Iota framework in `iota` page with `nextjs` Framework. It implement workflows that ensure users have full control over their data, with emphasis on secure and transparent data sharing practices using OID4VP & PEX.
 
 ![Affinidi Iota Framework](/images/iota.gif)
 
