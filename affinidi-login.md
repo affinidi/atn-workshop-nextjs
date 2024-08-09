@@ -4,7 +4,9 @@ Affinidi Login enhances security, privacy, and ensures compatibility with indust
 
 ## Introduction
 
-We will use a simple [Next.js](https://nextjs.org/) app and enable Affinidi Login on home page to utilizie OID4VP for secure passwordless login.
+We will use a simple [Next.js](https://nextjs.org/) app and enable Affinidi Login on home page to utilizie OID4VP for secure passwordless login. Learn to create secure and user-friendly authentication flows without relying on traditional passwords.
+
+![Affinidi Login](/images/Login.gif)
 
 ## Pre-Requisite
 
@@ -472,5 +474,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the home page with Affinidi login button. Clicking on button willl start login flow using Affinidi Vault.
-
-![Affinidi Login](/images/Login.gif)

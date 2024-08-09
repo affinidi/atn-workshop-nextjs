@@ -6,7 +6,9 @@ More Details on Affinidi Credential Issuance Service is available on [Affinidi D
 
 ## Introduction
 
-We will use a simple [Next.js](https://nextjs.org/) app and enable Affinidi Credentials Issuance Service in `credentials` page with `nextjs` Framework.
+We will use a simple [Next.js](https://nextjs.org/) app and enable Affinidi Credentials Issuance Service in `credentials` page with `nextjs` Framework. Dive into the Credentials Issuance feature to issue tamper-evident digital credentials, enabling trust in digital interactions through flow of portable trusted data.
+
+![Affinidi Credential Issuance](/images/cis.gif)
 
 ## Pre-Requisite
 
@@ -606,5 +608,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000/credentials](http://localhost:3000/credentials) with your browser to see the result.
-
-![Affinidi Credential Issuance](/images/cis.gif)
