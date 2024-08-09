@@ -8,6 +8,28 @@ We will use a simple [Next.js](https://nextjs.org/) app and enable Affinidi Logi
 
 ![Affinidi Login](/images/Login.gif)
 
+## Table of content
+
+| Content                         | Description                                                                                                               |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `Pre-Requisite`                 | complete the [pre-requisite](#pre-requisite) for Affinidi Login                                                           |
+| `Bootstarp a nextjs app`        | create [nextjs](#bootstarp-a-nextjs-app) from `create-next-app`                                                           |
+| `Test the newly created app`    | run the [app](#test-the-newly-created-app)                                                                                |
+| `create files & folders`        | create required directories and files in the [bootstrap app](#create-required-directories-and-files-in-the-bootstrap-app) |
+| `create .env files`             | add [.env](#add-env-file) files                                                                                           |
+| `update .env files`             | update [.env](#update-environment-variables) files                                                                        |
+| `Create bankend Env reader`     | create backend env reader file [env.ts](#create-env-reader) files                                                         |
+| `auth lib for nextjs`           | Install [next-auth](#install-auth-library-for-nextjs) library for nextjs                                                  |
+| `types for next auth`           | create [next-auth.d.ts](#add-types-for-next-auth) types for next-auth                                                     |
+| `types for next auth response`  | create [types.ts](#add-a-type-for-auth-response) types for next-auth                                                      |
+| `Affinidi as Auth Option`       | Create Auth Option for Login [auth-options.ts](#add-affinidi-as-auth-option)                                              |
+| `Affinidi as Auth Provider`     | Create Auth provider for Login [auth-provider.ts](#create-affinidi-auth-provider)                                         |
+| `Next Auth login`               | Create API to call Login [[...nextauth].ts](#create-api-to-handle-next-auth-login)                                        |
+| `Login method`                  | create client login [client-login.ts](#create-a-login-method)                                                             |
+| `login button`                  | Import next package and Update [index.tsx](#add-login-button-at-home-page) with Affinidi Login Buttion                    |
+| optional `css for login button` | Add CSS with for Affinidi login button style Guide [globals.css](#optional---add-css-for-login-button)                    |
+| `Run Application`               | Try the App with [Affinidi Login](#run-the-application-to-experience-affinidi-login)                                      |
+
 ## Pre-Requisite
 
 To complete this workshop, you would require a devleoper account at Affinidi Portal and few tools as lsited below.
