@@ -6,15 +6,15 @@ In this workshop, you'll build [Next.js](https://nextjs.org/) application bootst
 
 The workshop is structured into three key modules
 
-- **Module 1 : Implementing Passwordless Authentication**: Learn to create secure and user-friendly authentication flows without relying on traditional passwords using [Affinidi Login](/affinidi-login.md)
+- **Module 1 : Implementing Passwordless Authentication**: Learn to create secure and user-friendly authentication flows without relying on traditional passwords using [Affinidi Login](/Module-1/affinidi-login.md)
 
   - Estimated time to complete the module: **15 min**
 
-- **Module 2 : Verifiable Credential Issuance**: Dive into the Credentials Issuance feature to issue tamper-evident digital credentials, enabling trust in digital interactions through flow of portable trusted data using [Affinidi Credential Issuance Service](/credentials-issuance.MD)
+- **Module 2 : Verifiable Credential Issuance**: Dive into the Credentials Issuance feature to issue tamper-evident digital credentials, enabling trust in digital interactions through flow of portable trusted data using [Affinidi Credential Issuance Service](/Module-2/credentials-issuance.MD)
 
   - Estimated time to complete the module: **20 min**
 
-- **Module 3 : Building Consent-Driven Data Access**: Implement workflows that ensure users have full control over their data, with emphasis on secure and transparent data sharing practices using [Affinidi Iota Framework](/iota-framework.MD)
+- **Module 3 : Building Consent-Driven Data Access**: Implement workflows that ensure users have full control over their data, with emphasis on secure and transparent data sharing practices using [Affinidi Iota Framework](/Module-3/iota-framework.MD)
   - Estimated time to complete the module: **20 min**
 
 By the end of these module, you'll have a comprehensive understanding of how to leverage Affinidi Trust Network (ATN) to build robust, user-centric interoperable applications.
