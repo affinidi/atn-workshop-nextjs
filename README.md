@@ -1,18 +1,23 @@
 # Hello World with Affinidi Trust Network: Your Quick Start Guide
 
-In this workshop, you'll build a nextjs application created from [Next.js](https://nextjs.org/) bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) using the Affinidi Trust Network (ATN) that feature passwordless authentication flows, verifiable credential issuance, and consent-driven data access powered by the Iota framework. You'll also implement open standards-based workflows for collecting, storing, and sharing data securely, creating privacy-centric digital identity solutions. 
+In this workshop, you'll build [Next.js](https://nextjs.org/) application bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) using the Affinidi Trust Network (ATN) that feature passwordless authentication flows, verifiable credential issuance, and consent-driven data access powered by the Iota framework. You'll also implement open standards-based workflows for collecting, storing, and sharing data securely, creating privacy-centric digital identity solutions.
 
-## Readme
+## What you will build?
 
 The workshop is structured into three key modules
 
-- Module 1 : Implementing Passwordless Authentication: Learn to create secure and user-friendly authentication flows without relying on traditional passwords using [Affinidi Login](/affinidi-login.md)
+- **Module 1 : Implementing Passwordless Authentication**: Learn to create secure and user-friendly authentication flows without relying on traditional passwords using [Affinidi Login](/affinidi-login.md)
 
-- Module 2 : Verifiable Credential Issuance: Dive into the Credentials Issuance feature to issue tamper-evident digital credentials, enabling trust in digital interactions through flow of portable trusted data using [Affinidi Credential Issuance Service](/credentials-issuance.MD)
+  - Estimated time to complete the module: **20 min**
 
-- Module 3 : Building Consent-Driven Data Access: Implement workflows that ensure users have full control over their data, with emphasis on secure and transparent data sharing practices using [Affinidi Iota framework](/iota-framework.MD)
+- **Module 2 : Verifiable Credential Issuance**: Dive into the Credentials Issuance feature to issue tamper-evident digital credentials, enabling trust in digital interactions through flow of portable trusted data using [Affinidi Credential Issuance Service](/credentials-issuance.MD)
 
-By the end of the workshop, you'll have a comprehensive understanding of how to leverage Affinidi Trust Network (ATN) to build robust, user-centric interoperable applications.
+  - Estimated time to complete the module: **20 min**
+
+- **Module 3 : Building Consent-Driven Data Access**: Implement workflows that ensure users have full control over their data, with emphasis on secure and transparent data sharing practices using [Affinidi Iota Framework](/iota-framework.MD)
+  - Estimated time to complete the module: **25 min**
+
+By the end of these module, you'll have a comprehensive understanding of how to leverage Affinidi Trust Network (ATN) to build robust, user-centric interoperable applications.
 
 > [!NOTE]
 > Each module is directly related to the previous one, so make sure to try them one after another
@@ -48,10 +53,6 @@ Please ensure that you have in place your own terms and conditions, privacy poli
 If you are processing personal data, please protect the privacy and other legal rights of your end-users and store their personal or sensitive information securely.
 
 Some of our components would also require you to incorporate our end-user notices into your terms and conditions.
-
-### Are Affinidi Reference Applications free for use?
-
-Affinidi Reference Applications are free, so come onboard and experiment with our tools and see what you can build! We may bill for certain components in the future, but we will inform you beforehand.
 
 ### Do I need to provide you with anything?
 
