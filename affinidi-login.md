@@ -471,4 +471,6 @@ Try the App with Affinidi Login
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the home page with Affinidi login button. CLicking on button willl start login flow using Affinidi Vault.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the home page with Affinidi login button. Clicking on button willl start login flow using Affinidi Vault.
+
+![Affinidi Login](/images/Login.gif)

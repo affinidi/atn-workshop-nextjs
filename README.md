@@ -22,6 +22,8 @@ By the end of these module, you'll have a comprehensive understanding of how to 
 > [!NOTE]
 > Each module is directly related to the previous one, so make sure to try them one after another
 
+![Affinidi ATN Workshop](/images/workshop.gif)
+
 ## Read More
 
 Explore our [documentation](https://docs.affinidi.com/docs/) and [labs](https://docs.affinidi.com/labs/) to learn more about Affinidi Product, Service & Frameworks

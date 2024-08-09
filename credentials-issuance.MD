@@ -242,6 +242,7 @@ const Credentials: FC = () => {
         return;
       }
       setsession(mySession);
+      setcredentials({ ...credentials, email: mySession.user.email });
       console.log("Session found", mySession);
     }
     fetchsession();
@@ -605,3 +606,5 @@ npm run dev
 ```
 
 Open [http://localhost:3000/credentials](http://localhost:3000/credentials) with your browser to see the result.
+
+![Affinidi Credential Issuance](/images/cis.gif)

@@ -407,3 +407,5 @@ npm run dev
 ```
 
 Open [http://localhost:3000/iota](http://localhost:3000/iota) with your browser to see the result.
+
+![Affinidi Iota Framework](/images/iota.gif)
