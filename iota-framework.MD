@@ -30,7 +30,7 @@ More details here in [Affinidi Documentation](https://docs.affinidi.com/framewor
 > This sample App is extension of same App that we worked on for Affinidi Login and Affinidi Credentials Issuance Service.
 > &nbsp;
 
-## Step by Step Guide to enable Affinidi Iota framework
+## Step by Step Guide to enable Affinidi Iota Framework
 
 Before proceeding with the steps below, make sure you have completed the pre-requisites mentioned above.
 
