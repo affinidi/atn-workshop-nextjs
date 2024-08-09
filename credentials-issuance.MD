@@ -16,7 +16,7 @@ To complete this workshop, you would require a devleoper account at Affinidi Por
 
 - An account on [Affinidi portal](https://portal.affinidi.com/)
 - [Affinidi cli](https://docs.affinidi.com/dev-tools/affinidi-cli/)
-- Implement [Affinidi Login](/affinidi-login.md) to the sample Application created from this workshop
+- Implement [Affinidi Login](/affinidi-login.md) to this application (Covered in Module 1)
 
 You need to have the following installed on your machine:
 

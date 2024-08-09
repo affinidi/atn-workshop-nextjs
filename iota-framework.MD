@@ -16,8 +16,8 @@ To complete this workshop, you would require a devleoper account at Affinidi Por
 
 - An account on [Affinidi portal](https://portal.affinidi.com/)
 - [Affinidi cli](https://docs.affinidi.com/dev-tools/affinidi-cli/)
-- Implement [Affinidi Login](/affinidi-login.md) to the sample Application created from this workshop
-- Implement [Affinidi Credentials Issuance](/credentials-issuance.MD) to the sample application created from this workshop
+- Implement [Affinidi Login](/affinidi-login.md) in this application (covered in Module 1)
+- Implement [Affinidi Credentials Issuance](/credentials-issuance.MD) in this application (covered in Module 2)
 
 You need to have the following installed on your machine:
 
