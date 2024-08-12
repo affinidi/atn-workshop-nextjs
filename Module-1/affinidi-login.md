@@ -6,6 +6,12 @@ Affinidi Login enhances security, and privacy, and ensures compatibility with in
 
 We will use a simple [Next.js](https://nextjs.org/) app and enable Affinidi Login on the home page to utilize OID4VP for secure passwordless login. Learn to create secure and user-friendly authentication flows without relying on traditional passwords.
 
+## Architecture
+
+Affinidi Login enables developers to adopt password-less authentication flows for their applications with decentralised identity controlled by the user. Affinidi Login can be integrated with applications that support OIDC flow.
+
+![Affinidi Login Architecture](/images/login-arch.png)
+
 ## What you will build?
 
 ![Affinidi Login](/images/Login.gif)

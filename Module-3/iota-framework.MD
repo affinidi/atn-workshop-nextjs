@@ -8,6 +8,8 @@ More Details on Affinidi Iota Framework is available on [Affinidi Documentation]
 
 We will use the same [Next.js](https://nextjs.org/) app which we worked on in modules 1 & module 2 and enable the Affinidi Iota framework in the `iota` page with the `nextjs` Framework. It implements workflows that ensure users have full control over their data, emphasizing secure and transparent data-sharing practices using OID4VP & PEX.
 
+## Architecture
+
 ## What you will build?
 
 ![Affinidi Iota Framework](/images/iota.gif)
@@ -78,15 +80,12 @@ npm install @affinidi-tdk/iota-browser @affinidi-tdk/iota-core
 ### Create required directories and files
 
 ```sh
-
 mkdir -p src/components/iota
 mkdir -p src/pages/api/iota
 
 touch src/pages/iota.tsx
 touch src/components/iota/IotaClientPage.tsx
 touch src/pages/api/iota/start.ts
-
-
 ```
 
 ### Create a Personal Access Token (PAT)
@@ -101,8 +100,6 @@ You can refer the [Affinidi Documentation](https://docs.affinidi.com/dev-tools/a
 
 > [!IMPORTANT]
 > We already have created a personal access token (PAT) as part of [Affinidi Credential Issuance service](/credentials-issuance.MD#create-personal-access-token-pat). we will reuse the same token for the Affinidi Iota framework as well.
-
-&nbsp;
 
 ### Configure Affinidi Iota Configuration
 
@@ -265,7 +262,7 @@ export default function IotaTesting() {
 
 ### Apply Action on Button Click `handleIotaShare` function
 
-Create `handleIotaShare` function which invoke Iota framework
+Create `handleIotaShare` function which invoke Affinidi Iota Framework
 
 ```javascript
   const [iotaIsInitializing, setIotaIsInitializing] = useState(false);
