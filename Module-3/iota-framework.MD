@@ -14,7 +14,7 @@ To enable your website to request data from the user, you must create an Affinid
 
 After creating a configuration, you can integrate the Affinidi Iota Framework into your website with Affinidi TDK. This allows you to request and receive user data from their Affinidi Vault.
 
-![Affinidi Iota Framework](/images/Iota.png)
+![Affinidi Iota Framework](/images/Iota.svg)
 
 ## What you will build?
 
