@@ -1,12 +1,12 @@
-## Affinidi Iota Framwork
+## Affinidi Iota Framework
 
-A framework that provides a secured and simplified data-sharing process from Affinidi Vault with user consent for enhanced user experience.The Affinidi Iota Framework leverages the OID4VP (OpenID for Verifiable Presentation) standard to request and receive data from Affinidi Vault. The OID4VP is built with the OAuth 2.0 authorisation framework, providing developers with a simple and secure presentation of credentials.
+A framework that provides a secured and simplified data-sharing process from Affinidi Vault with user consent for enhanced user experience. The Affinidi Iota Framework leverages the OID4VP (OpenID for Verifiable Presentation) standard to request and receive data from Affinidi Vault. The OID4VP is built with the OAuth 2.0 authorisation framework, providing developers with a simple and secure presentation of credentials.
 
 More Details on Affinidi Iota Framework is available on [Affinidi Documentation](https://docs.affinidi.com/frameworks/iota-framework/)
 
 ## Introduction
 
-We will use a same [Next.js](https://nextjs.org/) app which we worked in module 1 & module 2 and enable Affinidi Iota framework in `iota` page with `nextjs` Framework. It implement workflows that ensure users have full control over their data, with emphasis on secure and transparent data sharing practices using OID4VP & PEX.
+We will use the same [Next.js](https://nextjs.org/) app which we worked on in modules 1 & module 2 and enable the Affinidi Iota framework in the `iota` page with the `nextjs` Framework. It implements workflows that ensure users have full control over their data, emphasizing secure and transparent data-sharing practices using OID4VP & PEX.
 
 ![Affinidi Iota Framework](/images/iota.gif)
 
@@ -15,12 +15,12 @@ We will use a same [Next.js](https://nextjs.org/) app which we worked in module 
 | Content                             | Description                                                                                                                                                                                     |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `Pre-Requisite`                     | complete the [pre-requisite](#pre-requisite) for Affinidi Iota Framework                                                                                                                        |
-| `install dependencies`              | install [dependencis](#install-dependencies)                                                                                                                                                    |
+| `install dependencies`              | install [dependencies](#install-dependencies)                                                                                                                                                    |
 | `create files & folders`            | create required directories and files in the [app](#create-required-directories-and-files)                                                                                                      |
 | ` personal access token`            | create [personal access token (PAT)](#create-personal-access-token-pat)                                                                                                                         |
 | `Affinidi Iota Framework config`    | configure [Affinidi Iota Framework](#configure-affinidi-iota-configuration)                                                                                                                     |
 | `update .env files`                 | update [.env](#update-environment-variables) files                                                                                                                                              |
-| `update fronend Env reader`         | update frontend env reader file [variables.ts](#update-frontend-env-reader) files                                                                                                               |
+| `update frontend Env reader`         | update frontend env reader file [variables.ts](#update-frontend-env-reader) files                                                                                                               |
 | `create routes & button`            | create [`/iota`](#create-iota-page-with-service-side-rendering-as-false) page with `ssr:false` and `button`                                                                                     |
 | `create component`                  | Add components [IotaClientPage.tsx](#add-components-for-rendering-the-page-iotaclientpage-with-button-to-initiate-iota-framework) for rendering the page with Button to Initiate Iota framework |
 | `handleIotaShare function`          | create [handleIotaShare](#apply-action-on-button-click-handleiotashare-function) function which invoke Iota framework                                                                           |
@@ -33,7 +33,7 @@ We will use a same [Next.js](https://nextjs.org/) app which we worked in module 
 
 ## Pre-Requisite
 
-To complete this workshop, you would require a devleoper account at Affinidi Portal and few tools as lsited below.
+To complete this workshop, you would require a developer account at Affinidi Portal and a few tools as listed below.
 
 - An account on [Affinidi portal](https://portal.affinidi.com/)
 - [Affinidi cli](https://docs.affinidi.com/dev-tools/affinidi-cli/)
@@ -48,18 +48,18 @@ You need to have the following installed on your machine:
 More details here in [Affinidi Documentation](https://docs.affinidi.com/frameworks/iota-framework/)
 
 > [!IMPORTANT]
-> This sample App is extension of same App that we worked on for Affinidi Login and Affinidi Credentials Issuance Service.
+> This sample App is an extension of the same App that we worked on for Affinidi Login and Affinidi Credentials Issuance Service.
 > &nbsp;
 
-## Step by Step Guide to enable Affinidi Iota Framework
+## Step-by-Step Guide to enable Affinidi Iota Framework
 
-Before proceeding with the steps below, make sure you have completed the pre-requisites mentioned above.
+Before proceeding with the steps below, make sure you have completed the prerequisites mentioned above.
 
 > [!WARNING]
-> The steps showcased to this sample application is provided only as a guide to quickly explore and learn how to integrate the components of Affinidi Trust Network into your application. This is NOT a Production-ready implementation. Do not deploy this to a production environment.
+> The steps showcased in this sample application are provided only as a guide to quickly explore and learn how to integrate the components of Affinidi Trust Network into your application. This is NOT a Production-ready implementation. Please don't deploy this to a production environment.
 > &nbsp;
 
-Now, let's continue with the step-by-step guide to enable Affinidi Iota framework in sample App.
+Now, let's continue with the step-by-step guide to enable the Affinidi Iota framework in the sample App.
 
 ### Install Dependencies
 
@@ -87,18 +87,18 @@ touch src/pages/api/iota/start.ts
 
 ```
 
-### Create Personal Access Token (PAT)
+### Create a Personal Access Token (PAT)
 
-Personal Access Token (PAT) is like a machine user that acts on your behalf to the Affinidi services. You can use the PAT to authenticate to the Affinidi services and automate specific tasks within your application. A Personal Access Token (PAT) lives outside of Projects, meaning PAT can access multiple projects once granted by the user.
+A Personal Access Token (PAT) is like a machine user that acts on your behalf to the Affinidi services. You can use the PAT to authenticate to the Affinidi services and automate specific tasks within your application. A Personal Access Token (PAT) lives outside of Projects, meaning PAT can access multiple projects once granted by the user.
 
 More Details on [Personal Access Token](https://docs.affinidi.com/dev-tools/affinidi-cli/manage-token/#how-does-pat-authentication-works) here.
 
-Personal Access Token is its needed for `Affinidi TDK Auth provider`.
+Personal Access Token is needed for `Affinidi TDK Auth provider`.
 
 You can refer the [Affinidi Documentation](https://docs.affinidi.com/dev-tools/affinidi-cli/manage-token/#affinidi-token-create-token) for creating pesronal access token from CLI.
 
 > [!IMPORTANT]
-> we already have create personal access token (PAT) as part of [Affinidi Credential Issuance service](/credentials-issuance.MD#create-personal-access-token-pat). we will reuse the same token for Affinidi Iota framework as well.
+> We already have created a personal access token (PAT) as part of [Affinidi Credential Issuance service](/credentials-issuance.MD#create-personal-access-token-pat). we will reuse the same token for the Affinidi Iota framework as well.
 
 &nbsp;
 
@@ -123,7 +123,7 @@ You can easily do this using the [Affinidi Portal](https://portal.affinidi.com)
    `Enable Consent Audit Log`: To store the consent given by the user whenever they share data with the website.
 
 4. After setting the fields and providing the list of the supported schema, click `Create`.
-5. Provide the name of the Presentation Definition and then select from the available templates to pre-populate the editor. You can modify the presentation definition template based on the required data you would like to request from the Affinidi Vault.
+5. Provide the name of the Presentation Definition and then select from the available templates to pre-populate the editor. You can just modify the presentation definition template based on the data you would like to request from the Affinidi Vault.
 
 **for eg**
 
@@ -160,7 +160,7 @@ You can easily do this using the [Affinidi Portal](https://portal.affinidi.com)
 6. Click on Save. `ConfigurationId` & `QueryId` is generated.
 
 > [!IMPORTANT]
-> The above PEX query provide response only in case affinidi vault has claimed credentials using Affinidi Credential Issuance enabled from the previous workshop steps.
+> The above PEX query responds only in case Affinidi Vault has claimed credentials using Affinidi Credential Issuance enabled from the previous workshop steps.
 > &nbsp;
 
 ### Update environment variables
@@ -183,7 +183,7 @@ export const configurationId = process.env.NEXT_PUBLIC_IOTA_CONFIGURATION_ID!;
 export const queryId = process.env.NEXT_PUBLIC_IOTA_QUERY_ID!;
 ```
 
-### Create `/iota` page with `service-side` rendering as `false`
+### Create a `/iota` page with `service-side` rendering as `false`
 
 Create new routes `src/pages/iota.tsx` and put dynamic content from Next Auth and `SSR : False`
 
@@ -201,7 +201,7 @@ export default function Page() {
 }
 ```
 
-### Add `components` for rendering the page `IotaClientPage` with `Button` to Initiate Iota framework
+### Add `components` for rendering the page `IotaClientPage` with `Button` to Initiate the Affinidi Iota framework
 
 Create a component as Iota Client Page `src/components/iota/IotaClientPage.tsx`
 
@@ -421,7 +421,7 @@ const updateDataRequestWithResponse = (response: IotaResponse) => {
 };
 ```
 
-### Run The application to experience Affinidi Iota framework
+### Run The application to experience the Affinidi Iota framework
 
 Try the App with Affinidi Login & Affinidi Iota Framework
 
