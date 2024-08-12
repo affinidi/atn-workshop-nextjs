@@ -10,7 +10,11 @@ We will use the same [Next.js](https://nextjs.org/) app which we worked on in mo
 
 ## Architecture
 
-WIP
+To enable your website to request data from the user, you must create an Affinidi Iota Framework configuration to set up the Signing Wallet, JWT Expiration, and the Presentation Definitions required to query the data from the Affinidi Vault.
+
+After creating a configuration, you can integrate the Affinidi Iota Framework into your website with Affinidi TDK. This allows you to request and receive user data from their Affinidi Vault.
+
+![Affinidi Iota Framework](/images/Iota.png)
 
 ## What you will build?
 

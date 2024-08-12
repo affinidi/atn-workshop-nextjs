@@ -10,7 +10,19 @@ We will use the same [Next.js](https://nextjs.org/) app that we used in module 1
 
 ## Architecture
 
-WIP
+When issuing a Verifiable Credential, three main flows happen within the whole process:
+
+- Issuance Configuration
+
+![Issuance Configuration](/images/cis-config.png)
+
+- Credential Issuance Flow
+
+![Credential Issuance Flow](/images/cis-flow.png)
+
+- Credential Offer Claim [ default : **TX_CODE**]
+
+![Credential Offer Claim](/images/cis-claim.png)
 
 ## What you will build?
 
