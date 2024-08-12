@@ -16,6 +16,8 @@ After creating a configuration, you can integrate the Affinidi Iota Framework in
 
 ![Affinidi Iota Framework](/images/Iota.png)
 
+<img src="/images/Iota.png" width="100" height="100"/>
+
 ## What you will build?
 
 ![Affinidi Iota Framework](/images/iota.gif)
