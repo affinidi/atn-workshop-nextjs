@@ -512,3 +512,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Move to
 
 - [**Homepage**](/README.md)
+
+## More Resources for Advanced Learning
+
+- [Affinidi Documentation](https://docs.affinidi.com/docs/affinidi-login/)
+- [Affinidi Reference Apps with Language & Frameworks](https://docs.affinidi.com/labs/languages/)
+- [Affinidi Login with Identity Management Solution](https://docs.affinidi.com/labs/identity-access-management/)
+- [Affinidi Login as 3rd Party plugin](https://docs.affinidi.com/labs/3rd-party-plugins/)
+- [Code Samples](https://docs.affinidi.com/other-resources/code-samples/)

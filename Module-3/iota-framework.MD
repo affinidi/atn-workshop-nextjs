@@ -441,3 +441,8 @@ Open [http://localhost:3000/iota](http://localhost:3000/iota) with your browser 
 - [**Module 1: Implementing Passwordless Authentication**](/Module-1/affinidi-login.md)
 - [**Module 2: Verifiable Credential Issuance**](/Module-2/credentials-issuance.MD)
 - [**Homepage**](/README.md)
+
+## More Resources for Advanced Learning
+
+- [Affinidi Documentation](https://docs.affinidi.com/frameworks/iota-framework/)
+- [Affinidi Reference Apps](https://docs.affinidi.com/frameworks/iota-framework/sample-application-nextjs/)

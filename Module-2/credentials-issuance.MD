@@ -696,3 +696,8 @@ Open [http://localhost:3000/credentials](http://localhost:3000/credentials) with
 
 - [**Module 1: Implementing Passwordless Authentication**](/Module-1/affinidi-login.md)
 - [**Homepage**](/README.md)
+
+## More Resources for Advanced Learning
+
+- [Affinidi Documentation](https://docs.affinidi.com/docs/affinidi-elements/credential-issuance/)
+- [Affinidi Reference Apps](https://docs.affinidi.com/docs/affinidi-elements/credential-issuance/sample-app-nextjs/)
