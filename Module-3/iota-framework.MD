@@ -8,27 +8,29 @@ More Details on Affinidi Iota Framework is available on [Affinidi Documentation]
 
 We will use the same [Next.js](https://nextjs.org/) app which we worked on in modules 1 & module 2 and enable the Affinidi Iota framework in the `iota` page with the `nextjs` Framework. It implements workflows that ensure users have full control over their data, emphasizing secure and transparent data-sharing practices using OID4VP & PEX.
 
+## What you will build?
+
 ![Affinidi Iota Framework](/images/iota.gif)
 
 ## Table of content
 
 | Content                             | Description                                                                                                                                                                                     |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Pre-Requisite`                     | complete the [pre-requisite](#pre-requisite) for Affinidi Iota Framework                                                                                                                        |
-| `install dependencies`              | install [dependencies](#install-dependencies)                                                                                                                                                    |
-| `create files & folders`            | create required directories and files in the [app](#create-required-directories-and-files)                                                                                                      |
-| ` personal access token`            | create [personal access token (PAT)](#create-personal-access-token-pat)                                                                                                                         |
-| `Affinidi Iota Framework config`    | configure [Affinidi Iota Framework](#configure-affinidi-iota-configuration)                                                                                                                     |
-| `update .env files`                 | update [.env](#update-environment-variables) files                                                                                                                                              |
-| `update frontend Env reader`         | update frontend env reader file [variables.ts](#update-frontend-env-reader) files                                                                                                               |
-| `create routes & button`            | create [`/iota`](#create-iota-page-with-service-side-rendering-as-false) page with `ssr:false` and `button`                                                                                     |
+| `Pre-Requisite`                     | Complete the [pre-requisite](#pre-requisite) for Affinidi Iota Framework                                                                                                                        |
+| `install dependencies`              | Install [dependencies](#install-dependencies)                                                                                                                                                   |
+| `create files & folders`            | Create required directories and files in the [app](#create-required-directories-and-files)                                                                                                      |
+| ` personal access token`            | Create [personal access token (PAT)](#create-personal-access-token-pat)                                                                                                                         |
+| `Affinidi Iota Framework config`    | Configure [Affinidi Iota Framework](#configure-affinidi-iota-configuration)                                                                                                                     |
+| `update .env files`                 | Update [.env](#update-environment-variables) files                                                                                                                                              |
+| `update frontend Env reader`        | Update frontend env reader file [variables.ts](#update-frontend-env-reader) files                                                                                                               |
+| `create routes & button`            | Create [`/iota`](#create-iota-page-with-service-side-rendering-as-false) page with `ssr:false` and `button`                                                                                     |
 | `create component`                  | Add components [IotaClientPage.tsx](#add-components-for-rendering-the-page-iotaclientpage-with-button-to-initiate-iota-framework) for rendering the page with Button to Initiate Iota framework |
-| `handleIotaShare function`          | create [handleIotaShare](#apply-action-on-button-click-handleiotashare-function) function which invoke Iota framework                                                                           |
-| `create IotaSession`                | add the [createIotaSession](#create-iotasession) function                                                                                                                                       |
-| `frontend API for Iota Token`       | create frontend API to pass details for [Iota Limited Token](#create-frontend-api-to-pass-details-for-iota-limited-token)                                                                       |
-| `backend API for Iota Token`        | create the API to start the Iota Limited Token [start.ts](#create-backend-api-to-call-affinidi-tdk-for-affinidi-auth-provider-and-affinidi-iota-core-for-creating-iota-limited-token)           |
-| `New data request`                  | add the [addNewDataRequest](#add-new-data-request) function                                                                                                                                     |
-| `update data request with response` | add the [updateDataRequestWithResponse](#update-the-data-request-with-response) function                                                                                                        |
+| `handleIotaShare function`          | Create [handleIotaShare](#apply-action-on-button-click-handleiotashare-function) function which invoke Iota framework                                                                           |
+| `create IotaSession`                | Add the [createIotaSession](#create-iotasession) function                                                                                                                                       |
+| `frontend API for Iota Token`       | Create frontend API to pass details for [Iota Limited Token](#create-frontend-api-to-pass-details-for-iota-limited-token)                                                                       |
+| `backend API for Iota Token`        | Create the API to start the Iota Limited Token [start.ts](#create-backend-api-to-call-affinidi-tdk-for-affinidi-auth-provider-and-affinidi-iota-core-for-creating-iota-limited-token)           |
+| `New data request`                  | Add the [addNewDataRequest](#add-new-data-request) function                                                                                                                                     |
+| `update data request with response` | Add the [updateDataRequestWithResponse](#update-the-data-request-with-response) function                                                                                                        |
 | `Run Application`                   | Try the App with [Affinidi Login & Affinidi Iota Framework](#run-the-application-to-experience-affinidi-iota-framework)                                                                         |
 
 ## Pre-Requisite

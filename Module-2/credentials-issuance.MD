@@ -8,24 +8,26 @@ More Details on Affinidi Credential Issuance Service is available on [Affinidi D
 
 We will use the same [Next.js](https://nextjs.org/) app that we used in module 1 and enable Affinidi Credentials Issuance Service in the `credentials` page with `nextjs` Framework. we will dive into the Credentials Issuance feature to issue tamper-evident digital credentials, enabling trust in digital interactions through the flow of portable trusted data.
 
+## What you will build?
+
 ![Affinidi Credential Issuance](/images/cis.gif)
 
 ## Table of content
 
 | Content                        | Description                                                                                                                                                          |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Pre-Requisite`                | complete the [pre-requisite](#pre-requisite) for Affinidi Credential Issuance Service                                                                                |
-| `install dependencies`         | install [dependencis](#install-dependencies)                                                                                                                         |
-| `create files & folders`       | create required directories and files in the [app](#create-required-directories-and-files)                                                                           |
-| ` personal access token`       | create [personal access token (PAT)](#create-personal-access-token-pat)                                                                                              |
-| `credential issuance config`   | configure [Credential Issuance Configuration](#configure-credential-issuance-configuration)                                                                          |
-| `update .env files`            | update [.env](#update-environment-variables) files                                                                                                                   |
-| `Create frontend Env reader`    | create frontend env reader file [variables.ts](#create-frontend-env-reader) files                                                                                    |
-| `update backend Env reader`    | update backend env reader file [env.ts](#update-backend-env-reader)                                                                                                  |
-| `create routes, form & button`  | create [`/credentials`](#create-credentials-page-with-form-and-button-with-default-vaules-and-session) page with `form` and `button` with default values and session |
-| `create handleSubmit function` | create [handleSubmit](#apply-action-on-handlesubmit-function) function which invoke the Affinidi Credentials Issuance Service.                                       |
-| `frontend API for issuance`    | create Front-end API [issuance-start.ts](#create-frontend-api-used-in-handlesubmit-function-to-pass-details-to-backend-api)                                          |
-| `backend API for issuance`     | create Back-end API [credentials-client.ts](#create-backend-api-to-call-affinidi-tdk-for-affinidi-auth-provider-and-affinidi-credentials-issuance-client)            |
+| `Pre-Requisite`                | Complete the [pre-requisite](#pre-requisite) for Affinidi Credential Issuance Service                                                                                |
+| `install dependencies`         | Install [dependencis](#install-dependencies)                                                                                                                         |
+| `create files & folders`       | Create required directories and files in the [app](#create-required-directories-and-files)                                                                           |
+| ` personal access token`       | Create [personal access token (PAT)](#create-personal-access-token-pat)                                                                                              |
+| `credential issuance config`   | Configure [Credential Issuance Configuration](#configure-credential-issuance-configuration)                                                                          |
+| `update .env files`            | Update [.env](#update-environment-variables) files                                                                                                                   |
+| `Create frontend Env reader`   | Create frontend env reader file [variables.ts](#create-frontend-env-reader) files                                                                                    |
+| `update backend Env reader`    | Update backend env reader file [env.ts](#update-backend-env-reader)                                                                                                  |
+| `create routes, form & button` | Create [`/credentials`](#create-credentials-page-with-form-and-button-with-default-vaules-and-session) page with `form` and `button` with default values and session |
+| `create handleSubmit function` | Create [handleSubmit](#apply-action-on-handlesubmit-function) function which invoke the Affinidi Credentials Issuance Service.                                       |
+| `frontend API for issuance`    | Create Front-end API [issuance-start.ts](#create-frontend-api-used-in-handlesubmit-function-to-pass-details-to-backend-api)                                          |
+| `backend API for issuance`     | Create Back-end API [credentials-client.ts](#create-backend-api-to-call-affinidi-tdk-for-affinidi-auth-provider-and-affinidi-credentials-issuance-client)            |
 | `Run Application`              | Try the App with [Affinidi Login & Affinidi Credentials Issuance Configuration](#run-the-application-to-experience-affinidi-credentials-issuance)                    |
 
 ## Pre-Requisite
