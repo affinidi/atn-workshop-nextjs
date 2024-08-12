@@ -675,3 +675,12 @@ npm run dev
 ```
 
 Open [http://localhost:3000/credentials](http://localhost:3000/credentials) with your browser to see the result.
+
+## Next Module
+
+- [**Module 3: Building Consent-Driven Data Access**](/Module-3/iota-framework.MD)
+
+## Move to
+
+- [**Module 1: Implementing Passwordless Authentication**](/Module-1/affinidi-login.md)
+- [**Homepage**](/README.md)

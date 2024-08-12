@@ -504,3 +504,11 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the home page with the Affinidi login button. Clicking on the button will start the login flow using Affinidi Vault.
+
+## Next Module
+
+- [**Module 2: Verifiable Credential Issuance**](/Module-2/credentials-issuance.MD)
+
+## Move to
+
+- [**Homepage**](/README.md)
