@@ -10,6 +10,8 @@ We will use the same [Next.js](https://nextjs.org/) app which we worked on in mo
 
 ## Architecture
 
+WIP
+
 ## What you will build?
 
 ![Affinidi Iota Framework](/images/iota.gif)
