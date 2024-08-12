@@ -6,7 +6,7 @@ More Details on Affinidi Credential Issuance Service is available on [Affinidi D
 
 ## Introduction
 
-We will use a same [Next.js](https://nextjs.org/) app that we used in module 1 and enable Affinidi Credentials Issuance Service in `credentials` page with `nextjs` Framework. we will dive into the Credentials Issuance feature to issue tamper-evident digital credentials, enabling trust in digital interactions through flow of portable trusted data.
+We will use the same [Next.js](https://nextjs.org/) app that we used in module 1 and enable Affinidi Credentials Issuance Service in the `credentials` page with `nextjs` Framework. we will dive into the Credentials Issuance feature to issue tamper-evident digital credentials, enabling trust in digital interactions through the flow of portable trusted data.
 
 ![Affinidi Credential Issuance](/images/cis.gif)
 
@@ -20,9 +20,9 @@ We will use a same [Next.js](https://nextjs.org/) app that we used in module 1 a
 | ` personal access token`       | create [personal access token (PAT)](#create-personal-access-token-pat)                                                                                              |
 | `credential issuance config`   | configure [Credential Issuance Configuration](#configure-credential-issuance-configuration)                                                                          |
 | `update .env files`            | update [.env](#update-environment-variables) files                                                                                                                   |
-| `Create fronend Env reader`    | create frontend env reader file [variables.ts](#create-frontend-env-reader) files                                                                                    |
+| `Create frontend Env reader`    | create frontend env reader file [variables.ts](#create-frontend-env-reader) files                                                                                    |
 | `update backend Env reader`    | update backend env reader file [env.ts](#update-backend-env-reader)                                                                                                  |
-| `create routes,form & button`  | create [`/credentials`](#create-credentials-page-with-form-and-button-with-default-vaules-and-session) page with `form` and `button` with default vaules and session |
+| `create routes, form & button`  | create [`/credentials`](#create-credentials-page-with-form-and-button-with-default-vaules-and-session) page with `form` and `button` with default values and session |
 | `create handleSubmit function` | create [handleSubmit](#apply-action-on-handlesubmit-function) function which invoke the Affinidi Credentials Issuance Service.                                       |
 | `frontend API for issuance`    | create Front-end API [issuance-start.ts](#create-frontend-api-used-in-handlesubmit-function-to-pass-details-to-backend-api)                                          |
 | `backend API for issuance`     | create Back-end API [credentials-client.ts](#create-backend-api-to-call-affinidi-tdk-for-affinidi-auth-provider-and-affinidi-credentials-issuance-client)            |
@@ -30,7 +30,7 @@ We will use a same [Next.js](https://nextjs.org/) app that we used in module 1 a
 
 ## Pre-Requisite
 
-To complete this workshop, you would require a devleoper account at Affinidi Portal and few tools as lsited below.
+To complete this workshop, you would require a developer account at Affinidi Portal and a few tools as listed below.
 
 - An account on [Affinidi portal](https://portal.affinidi.com/)
 - [Affinidi cli](https://docs.affinidi.com/dev-tools/affinidi-cli/)
@@ -44,19 +44,19 @@ You need to have the following installed on your machine:
 More details here in [Affinidi Documentation](https://docs.affinidi.com/docs/affinidi-elements/credential-issuance/)
 
 > [!IMPORTANT]
-> This sample App is extension of same App that we worked on for Affinidi Login.
+> This sample App is an extension of the same App that we worked on for Affinidi Login.
 
 &nbsp;
 
-## Step by Step Guide to enable Affinidi Credential Issuance Service
+## Step-by-Step Guide to enable Affinidi Credential Issuance Service
 
-Before proceeding with the steps below, make sure you have completed the pre-requisites mentioned above.
+Before proceeding with the steps below, make sure you have completed the prerequisites mentioned above.
 
 > [!WARNING]
-> The steps showcased to this sample application is provided only as a guide to quickly explore and learn how to integrate the components of Affinidi Trust Network into your application. This is NOT a Production-ready implementation. Do not deploy this to a production environment.
+> The steps showcased in this sample application are provided only as a guide to quickly explore and learn how to integrate the components of Affinidi Trust Network into your application. This is NOT a Production-ready implementation. Do not deploy this to a production environment.
 > &nbsp;
 
-Now, let's continue with the step-by-step guide to enable Affinidi Credentials Issuance service in sample App.
+Now, let's continue with the step-by-step guide to enable the Affinidi Credentials Issuance service in the sample App.
 
 ### Install Dependencies
 
@@ -98,7 +98,7 @@ You can refer the [Affinidi Documentation](https://docs.affinidi.com/dev-tools/a
    affinidi start
    ```
 
-2. Once logged in successfully, create token by running below command
+2. Once logged in successfully, create a token by running the below command
 
    ```sh
    affinidi token create-token
@@ -150,7 +150,7 @@ You can refer the [Affinidi Documentation](https://docs.affinidi.com/dev-tools/a
       }
     }
 
-    Use the projectId, tokenId, privateKey and passphrase (if provided) to use this token with Affinidi TDK
+    Use the projectId, tokenId, privateKey, and passphrase (if provided) to use this token with Affinidi TDK
     {
       "tokenId": "*******",
       "projectId": "*******",
@@ -163,7 +163,7 @@ You can refer the [Affinidi Documentation](https://docs.affinidi.com/dev-tools/a
 
    ```
 
-   For more details on the command run below command
+   For more details on the command run the below command
 
    ```sh
    affinidi token create-token --help
@@ -177,15 +177,15 @@ You can easily do this using the [Affinidi Portal](https://portal.affinidi.com)
 
 1. Login on [Affinidi Portal](https://portal.affinidi.com)
 
-2. Open `Wallets` menu under the `Tools` section and click on `Create Wallet` with any name (e.g. `MyWallet`) and DID method as `did:key`.
+2. Open the `Wallets` menu under the `Tools` section and click on `Create Wallet` with any name (e.g. `MyWallet`) and DID method as `did:key`.
 
 For more information, refer to the [Wallets documentation](https://docs.affinidi.com/dev-tools/wallets)
 
-3. Go to `Credential Issuance Service` under `Services` section.
+3. Go to `Credential Issuance Service` under the `Services` section.
 
 4. Click on `Create Configuration` and set the following fields:
 
-   `Issuing Wallet`: Select Wallet Created previous step
+   `Issuing Wallet`: Select Wallet Created the previous step
    `Lifetime of Credential Offer` as `600`
 
 5. Add schemas by clicking on "Add new item" under `Supported Schemas`
@@ -199,7 +199,7 @@ For more information, refer to the [Wallets documentation](https://docs.affinidi
 
 &nbsp;
 
-More details on `Schema Builder` refer [Affinidi documentation](https://docs.affinidi.com/docs/affinidi-elements/schema-builder/).
+For more details on `Schema Builder` refer to [Affinidi documentation](https://docs.affinidi.com/docs/affinidi-elements/schema-builder/).
 
 ### Update environment variables
 
@@ -211,7 +211,7 @@ update `.env` file
 NEXT_PUBLIC_VAULT_URL="https://vault.affinidi.com/claim?credential_offer_uri"
 NEXT_PUBLIC_CREDENTIAL_TYPE_ID="TworkshopSchemaV1R0"
 
-## backend only variables , update details from personal access token response from above steps
+## backend only variables, update details from personal access token response from above steps
 
 TOKEN_ENDPOINT="https://apse1.auth.developer.affinidi.io/auth/oauth2/token"
 API_GATEWAY_URL="https://apse1.api.affinidi.io"
@@ -251,7 +251,7 @@ export const tokenId = process.env.TOKEN_ID!;
 
 ```
 
-### Create `/credentials` page with `form` and `button` with default vaules and session
+### Create `/credentials` page with `form` and `button` with default values and session
 
 Create `src/pages/credentials.tsx` Page
 
