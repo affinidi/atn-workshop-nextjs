@@ -24,6 +24,44 @@ By the end of these modules, you'll have a comprehensive understanding of how to
 
 ![Affinidi ATN Workshop](/images/workshop.gif)
 
+## Get to modules
+
+<div style="display: flex; justify-content: space-between; margin-top: 20px;">
+  <a href="/Module-1/affinidi-login.md" style="text-decoration: none;">
+    <button style="
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #0078D4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    ">Module 1</button>
+  </a>
+  <a href="/Module-2/credentials-issuance.MD" style="text-decoration: none;">
+    <button style="
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #0078D4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    ">Module 2</button>
+  </a>
+  <a href="/Module-3/iota-framework.MD" style="text-decoration: none;">
+    <button style="
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #0078D4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    ">Module 3</button>
+  </a>
+</div>
+
 ## Read More
 
 Explore our [documentation](https://docs.affinidi.com/docs/) and [labs](https://docs.affinidi.com/labs/) to learn more about Affinidi Product, Service & Frameworks
