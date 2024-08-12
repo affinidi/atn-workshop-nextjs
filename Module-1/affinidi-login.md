@@ -1,10 +1,10 @@
 # Affinidi Login
 
-Affinidi Login enhances security, privacy, and ensures compatibility with industry standards while simplifying authentication processes. With Affinidi Login, you can create a secure, user-friendly login experience by using OID4VP (Open ID for Verifiable Presentations).
+Affinidi Login enhances security, and privacy, and ensures compatibility with industry standards while simplifying authentication processes. With Affinidi Login, you can create a secure, user-friendly login experience by using OID4VP (Open ID for Verifiable Presentations).
 
 ## Introduction
 
-We will use a simple [Next.js](https://nextjs.org/) app and enable Affinidi Login on home page to utilizie OID4VP for secure passwordless login. Learn to create secure and user-friendly authentication flows without relying on traditional passwords.
+We will use a simple [Next.js](https://nextjs.org/) app and enable Affinidi Login on the home page to utilize OID4VP for secure passwordless login. Learn to create secure and user-friendly authentication flows without relying on traditional passwords.
 
 ![Affinidi Login](/images/Login.gif)
 
@@ -32,12 +32,12 @@ We will use a simple [Next.js](https://nextjs.org/) app and enable Affinidi Logi
 
 ## Pre-Requisite
 
-To complete this workshop, you would require a devleoper account at Affinidi Portal and few tools as lsited below.
+To complete this workshop, you would require a developer account at Affinidi Portal and a few tools as listed below.
 
 - An account on [Affinidi portal](https://portal.affinidi.com/)
 - [Affinidi cli](https://docs.affinidi.com/dev-tools/affinidi-cli/)
 - [Login Configuration](https://docs.affinidi.com/docs/affinidi-login/login-configuration/) using [Affinidi CLI](https://docs.affinidi.com/dev-tools/affinidi-cli/manage-login/#affinidi-login-create-config) or [Affinidi Portal](https://portal.affinidi.com/affinidiLogin)
-- Redirect URL : `http://localhost:3000/api/auth/callback/affinidi`
+- Redirect URL: `http://localhost:3000/api/auth/callback/affinidi`
 
 You need to have the following installed on your machine:
 
@@ -46,12 +46,12 @@ You need to have the following installed on your machine:
 
 More details here in [Affinidi Documentation](https://docs.affinidi.com/labs/languages/affinidi-login-basic/#create-login-configuration)
 
-## Step by Step Guide to enable Affinidi Login
+## Step-by-Step Guide to enable Affinidi Login
 
-Before proceeding with the steps below, make sure you have completed the pre-requisites mentioned above.
+Before proceeding with the steps below, make sure you have completed the prerequisites mentioned above.
 
 > [!WARNING]
-> The steps showcased to this sample application is provided only as a guide to quickly explore and learn how to integrate the components of Affinidi Trust Network into your application. This is NOT a Production-ready implementation. Do not deploy this to a production environment.
+> The steps showcased in this sample application are provided only as a guide to quickly explore and learn how to integrate the components of Affinidi Trust Network into your application. This is NOT a Production-ready implementation. Do not deploy this to a production environment.
 
 Now, let's continue with the step-by-step guide to enable Affinidi Login in the sample App.
 
@@ -345,7 +345,7 @@ export async function clientLogin() {
 
 ### Add login button at Home page
 
-Import next package and Update `src/pages/index.tsx` with Affinidi Login Buttion and `handleLogin` to initiate Login
+Import next package and Update `src/pages/index.tsx` with Affinidi Login Button and `handleLogin` to initiate Login
 
 ```javascript
 import Image from "next/image";
@@ -429,7 +429,7 @@ export default function Home() {
 }
 ```
 
-### Optional - add css for login button
+### Optional - add css for the login button
 
 Add CSS with for Affinidi login button [style Guide](https://docs.affinidi.com/docs/affinidi-login/button-styleguide/) `src/styles/globals.css`
 
@@ -495,4 +495,4 @@ Try the App with Affinidi Login
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the home page with Affinidi login button. Clicking on button willl start login flow using Affinidi Vault.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the home page with the Affinidi login button. Clicking on the button will start the login flow using Affinidi Vault.
