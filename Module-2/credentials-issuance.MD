@@ -10,8 +10,6 @@ We will use the same [Next.js](https://nextjs.org/) app that we used in module 1
 
 ## Architecture
 
-![Affinidi Credential Issuance Service](/images/cis-arch.png)
-
 ## What you will build?
 
 ![Affinidi Credential Issuance](/images/cis.gif)
